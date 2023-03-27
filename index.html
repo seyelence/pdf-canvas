@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pdf test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <input type="file" id="file-input" accept=".pdf" />
+  <div id="toolbar">
+    <div>
+      <button id="pen" class="dropdown"> Pen</button>      
+      <button id="highlighter">Highlighter</button>
+      <button id="eraser"> Eraser</button>
+      <button id="add-text">Add Text </button>
+      <div class="toolbar-divider"></div>
+      <div>
+        <button id="prev-page">Prev</button>
+        <button id="next-page">Next </button>
+      </div>
+      <div class="toolbar-divider"></div>
+      <div>
+        <button id="open-pdf"> Open PDF</button>
+        <button id="save">Save</button>
+      </div>
+
+  <div id="canvas-wrapper">
+    <canvas id="pdf-canvas"></canvas>
+    <canvas id="annotation-canvas"></canvas>
+  </div>
+
+  <!-- pdfjs-dist stuff-->
+  <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@3.4.120/build/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+
+  <script src="pdf.js"></script>
+</body>
+
+</html>
